@@ -18,7 +18,7 @@ class App extends React.Component{
               <Navbar.Brand href="#home">
                 <Link to="/"> <img src={logo} className="App-logo" alt="logo" /></Link>
               </Navbar.Brand>
-              <Nav href="/">
+              <Nav className="nav-links" href="/">
                 <Link to="Repos">Repositorios</Link>
                 <Link to="Users">Usuarios</Link>
               </Nav>

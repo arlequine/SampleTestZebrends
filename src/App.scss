@@ -1,9 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 479px;
 body {
   margin: 0
 }
 .App-logo {
-  height: 5vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -25,6 +27,49 @@ body {
 .App-link {
   color: #61dafb;
 }
+
+.nav-links {
+  a {
+    margin-left: 10%;
+    color: #F0F3F4;
+  }
+}
+
+.form-user {
+  input {
+    width: 50%;
+  }
+}
+
+.content-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .form-user {
+    input {
+      width: 100%;
+    }
+  }
+  .content-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: $breakpoint-mobile) {
+  .form-user {
+    input {
+      width: 100%;
+    }
+  }
+  .content-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+// .form-group {
+// }
 
 @keyframes App-logo-spin {
   from {

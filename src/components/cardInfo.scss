@@ -1,0 +1,14 @@
+.card-container {
+  display: grid;
+  justify-content: center;
+}
+
+.card-container-repos {
+  margin: 5% 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  min-height: 18rem;
+}
